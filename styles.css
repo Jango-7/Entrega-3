@@ -98,7 +98,7 @@ div.row{
 
 /* Main Contacto  */
 
-#contacto{
+/* #contacto{
     text-align: center;
     font-family: monospace;
     margin: 0 auto 2%;
@@ -111,7 +111,7 @@ div.row{
 button.btn-outline-dark{
 margin: 0 auto;
 margin-left: 47%;
-}
+} */
 
 
 /* footer index  */
@@ -151,30 +151,41 @@ margin-left: 47%;
 @media only screen and (min-width:426px) and (max-width:768px){
     .container h2{
         font-size: 4rem;
+        margin-top: 5%;
     }
     .item3{
         width: 20%;
         margin-left: 75%;
+        margin-top: 20%;
     }
     .icon{
         font-size: 25px;
+    }
+    div.container a{
+        margin-top: 10%;
     }
 }
 
 @media only screen and (max-width:425px){
+    .container h1{
+        font-size: 2rem;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
     .container h2{
         font-size: 3rem;
+        margin-top: 10%;
     }
     .item3{
         width: 50%;
-        margin: 10% auto;
+        margin: 35% auto;
     }
     .icon{
         font-size: 25px;
     }
 
-    button.btn-outline-dark{
-        margin-left: 41%;
+    div.container a{
+        margin: 10% auto ;
     }
 
 }
