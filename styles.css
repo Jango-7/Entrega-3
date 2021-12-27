@@ -2,9 +2,10 @@
 
 
 body{
-    background-image: url(img/bg3.jpeg);
+    background-image: url(img/bg4.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 body:before{
@@ -38,10 +39,10 @@ body:before{
 
 .container h1{
     margin-top: 7%;
-    color: #e9e9eb8f !important;
+    color: #e9e9ebb2 !important;
 }
 .container h2{
-    color: #000000b4;
+    color: #e9e9ebb2;
     font-size: 6rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
@@ -53,6 +54,9 @@ body:before{
 }
 div.container.button{
     margin-bottom: 12%;
+}
+.animated__animated.animate__bounceIn{
+    animation-duration: 2s;
 }
 /* Main STAFF  */
 
@@ -70,6 +74,9 @@ div.carousel-inner{
     margin-left: 10%;
     border: 10px solid rgba(0, 0, 0, 0.329);
 }
+.carousel-caption{
+    background: rgba(0, 0, 0, 0.267);
+}
 .d-block{
     height: 100%;
     object-fit: cover;
@@ -79,12 +86,14 @@ div.carousel-inner{
     color: rgba(0, 0, 0, 0.651) !important;
     text-transform: uppercase;
     margin-bottom: 5%;
-    font-family: cursive;
+    font-size: 3rem;
+    background-color: #e9e9ebc4;
 }
 
 div.row{
     margin-bottom: 5%;
 }
+
 
 
 /* Main Contacto  */

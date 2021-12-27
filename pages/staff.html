@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <title>VM Bootstrap</title>
 </head>
@@ -45,7 +46,7 @@
     <!-- Profesores*  -->
 
     <div class="container profes">
-        <h3>Nuestros profesores</h3>
+        <h3>NUESTROS PROFESORES</h3>
     </div>
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -120,10 +121,10 @@
 
     <!-- Coordinacion**  -->
 
-    <div class="container coord">
-        <h1 id="coord"> Coordinación</h1>
+    <div class="container coord" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+        <h1 id="coord">Coordinación</h1>
     </div>
-    <div class="row" style="justify-content: space-evenly;">
+    <div class="row" data-aos="fade-up" style="justify-content: space-evenly;">
         <div class="card col-xs-12 col-md-4 col-lg-3 p-5" style="width: 18rem;">
             <img src="../img/profeA.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -162,6 +163,11 @@
 
 
     <!-- Scripts  -->
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
