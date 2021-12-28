@@ -1,0 +1,16 @@
+.navbar-brand {
+    & img {
+    height: 100px;
+    width: 100px;
+    }
+}
+#navbarNav {
+    justify-content: right;
+    margin-right: 2em;
+    & .nav-link{
+        font-size: 1.2rem;
+        color: $colorPrincipal !important;
+    }
+}
+
+

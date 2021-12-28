@@ -1,0 +1,25 @@
+.container {
+    & h1 {
+    margin-top: 7%;
+    color: $colorSecundario !important;
+    }
+    & h2{
+        color: $colorSecundario;
+        font-size: 6rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+    }
+}
+.button{
+    margin-bottom: 12%;
+    & .btn{
+        color: rgba(136, 219, 40, 0.877);
+        margin-top: 3%;
+    }
+}
+.animated__animated.animate__bounceIn{
+    animation-duration: 2s;
+}
+
+
+
