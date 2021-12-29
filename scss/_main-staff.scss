@@ -1,6 +1,6 @@
 .container {
     & h3{
-        color: #e9e9ebc4;
+        color: $colorPrincipal;
         text-align: center;
     }
 }
@@ -24,7 +24,7 @@
 .coord {
     & #coord{
         text-align: center;
-        color: rgba(0, 0, 0, 0.651) !important;
+        color: $colorTerciario !important;
         text-transform: uppercase;
         margin-bottom: 5%;
         font-size: 3rem;
