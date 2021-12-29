@@ -1,0 +1,37 @@
+.container {
+    & h3{
+        color: #e9e9ebc4;
+        text-align: center;
+    }
+}
+
+.carousel-inner{
+    height: 40em;
+    & .carousel-item{
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+        border: 10px solid rgba(0, 0, 0, 0.329);
+        & .d-block {
+            height: 100%;
+            object-fit: cover;
+        }
+        & .carousel-caption{
+            background: rgba(0, 0, 0, 0.267);
+        }
+    }
+}
+.coord {
+    & #coord{
+        text-align: center;
+        color: rgba(0, 0, 0, 0.651) !important;
+        text-transform: uppercase;
+        margin-bottom: 5%;
+        font-size: 3rem;
+        background-color: #e9e9ebc4;
+    }
+}
+
+div.row{
+    margin-bottom: 5%;
+}

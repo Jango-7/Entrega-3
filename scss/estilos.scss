@@ -2,6 +2,7 @@
 @import "variables";
 @import "header";
 @import "main-index";
+@import "main-staff";
 @import "footer";
 
 body{
@@ -23,42 +24,6 @@ body:before{
 }
 
 
-
-/* Main STAFF  */
-
-.container h3{
-    color: #e9e9ebc4;
-    text-align: center;
-}
-
-div.carousel-inner{
-    height: 40em;
-}
-.carousel-item{
-    height: 100%;
-    width: 80%;
-    margin-left: 10%;
-    border: 10px solid rgba(0, 0, 0, 0.329);
-}
-.carousel-caption{
-    background: rgba(0, 0, 0, 0.267);
-}
-.d-block{
-    height: 100%;
-    object-fit: cover;
-}
-#coord{
-    text-align: center;
-    color: rgba(0, 0, 0, 0.651) !important;
-    text-transform: uppercase;
-    margin-bottom: 5%;
-    font-size: 3rem;
-    background-color: #e9e9ebc4;
-}
-
-div.row{
-    margin-bottom: 5%;
-}
 
 
 
