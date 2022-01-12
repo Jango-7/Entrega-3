@@ -1,10 +1,10 @@
 .container {
     & h1 {
     margin-top: 7%;
-    color: $colorSecundario !important;
+    color: map-get($map: $typeColor, $key: 'secundario') !important;
     }
     & h2{
-        color: $colorSecundario;
+        color: map-get($map: $typeColor, $key: 'secundario');
         font-size: 6rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 700;
@@ -13,7 +13,7 @@
 .button{
     margin-bottom: 12%;
     & .btn{
-        color: rgba(136, 219, 40, 0.877);
+        color: map-get($map: $typeColor, $key: 'success');
         margin-top: 3%;
     }
 }

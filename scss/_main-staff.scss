@@ -1,6 +1,6 @@
 .container {
     & h3{
-        color: $colorPrincipal;
+        color: map-get($map: $typeColor, $key: 'principal');
         text-align: center;
     }
 }
@@ -24,7 +24,7 @@
 .coord {
     & #coord{
         text-align: center;
-        color: $colorTerciario !important;
+        color: map-get($map: $typeColor, $key: 'terciario') !important;
         text-transform: uppercase;
         margin-bottom: 5%;
         font-size: 3rem;
@@ -34,4 +34,19 @@
 
 div.row{
     margin-bottom: 5%;
+}
+
+@mixin dimensiones($height, $width, $bgcolor) {
+    height: $height;
+    width: $width;
+    background-color: $bgcolor;
+}
+.objetivo{
+    @include dimensiones(200px, 90%, #e9e9ebc4);
+    margin: 0 auto 4%;
+    padding: 30px 30px 30px 30px;
+}
+
+.objetivo-alumno {
+    @extend .objetivo;
 }

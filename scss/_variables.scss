@@ -1,3 +1,10 @@
-$colorPrincipal: #e9e9ebc4;
-$colorSecundario: #e9e9ebb2;
-$colorTerciario: rgba(0, 0, 0, 0.651);
+// Mapa de colores tipografia y fondo 
+
+$typeColor: (
+    'principal': #e9e9ebc4,
+    'secundario': #e9e9ebb2,
+    'terciario': rgba(0, 0, 0, 0.651),
+    'success': rgba(136, 219, 40, 0.877),
+    'gradiante': linear-gradient(to bottom, #473198, black),
+);
+

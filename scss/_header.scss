@@ -9,7 +9,7 @@
     margin-right: 2em;
     & .nav-link{
         font-size: 1.2rem;
-        color: $colorPrincipal !important;
+        color: map-get($map: $typeColor, $key: 'principal') !important;
     }
 }
 

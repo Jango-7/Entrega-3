@@ -73,6 +73,29 @@ div.row {
   margin-bottom: 5%;
 }
 
+.objetivo, .objetivo-alumno {
+  height: 200px;
+  width: 90%;
+  background-color: #e9e9ebc4;
+  margin: 0 auto 4%;
+  padding: 30px 30px 30px 30px;
+}
+
+#contacto {
+  text-align: center;
+  font-family: monospace;
+  margin: 0 auto 2%;
+}
+
+.container.formulario {
+  padding: 0 20%;
+}
+
+button.btn-outline-dark {
+  margin: 0 auto;
+  margin-left: 47%;
+}
+
 .item {
   display: flex;
   flex-direction: row;
@@ -110,21 +133,6 @@ body:before {
   z-index: -1;
 }
 
-/* Main Contacto  */
-/* #contacto{
-    text-align: center;
-    font-family: monospace;
-    margin: 0 auto 2%;
-}
-
-.container.formulario{
-    padding: 0 20%;
-}
-
-button.btn-outline-dark{
-margin: 0 auto;
-margin-left: 47%;
-} */
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   .container h2 {
     font-size: 4rem;
