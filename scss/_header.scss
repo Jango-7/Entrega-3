@@ -11,6 +11,11 @@
         font-size: 1.2rem;
         color: map-get($map: $typeColor, $key: 'principal') !important;
     }
+    & .nav-link:hover {
+        color: map-get($map: $typeColor, $key:'success') !important;
+        border: 1px solid map-get($map: $typeColor, $key:'success');
+        border-radius: 50px;
+    }
 }
 
 

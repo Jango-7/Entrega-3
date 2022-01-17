@@ -1,3 +1,13 @@
+video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    object-position: center;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
 .container {
     & h1 {
     margin-top: 7%;
@@ -15,6 +25,7 @@
     & .btn{
         color: map-get($map: $typeColor, $key: 'success');
         margin-top: 3%;
+        border-radius: 50px;
     }
 }
 .animated__animated.animate__bounceIn{
