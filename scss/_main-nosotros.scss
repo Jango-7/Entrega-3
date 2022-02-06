@@ -1,0 +1,62 @@
+.no-n{
+    color: rgb(196, 186, 44) !important;
+    text-decoration-line: line-through;
+}
+.st-n, .ga-n, .co-n, .in-n{
+    color: map-get($map: $typeColor, $key: 'principal') !important;
+}
+
+article{
+    background-color: rgba(0, 0, 0, 0.788);
+    color: whitesmoke;
+    font-size: 18px;
+    width: 60%;
+    min-height: 70vh;
+    padding: 5em;
+    margin-top: 5em;
+    margin-left: 10em;
+    & img{
+        width: 1000px;
+        height: 50%;
+    }
+}
+
+.gab {
+    display: flex;
+    background-color: rgba(245, 245, 245, 0.788);
+    min-height: 700px;
+    width: 100%;
+    padding: 70px;
+    margin-bottom: 5em;
+    & .dir{
+        display: flex;
+        background: rgba(255, 255, 255, 0.767);
+        padding: 20px;
+        min-height: 450px;
+        line-height: 50px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    & p{
+        font-family: monospace;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 10px ;
+    }
+    & img.gabi{
+        border: 2px solid black;
+        height: 400px;
+        width: 600px;
+        margin-top: 5%;
+    }
+}
+.map{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.733);
+    & #map{
+        height: 20em;
+        width: 20em;
+        margin: 3em auto;
+    }
+}

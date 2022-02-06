@@ -8,9 +8,17 @@ video {
     opacity: 0.8;
 }
 
+.in{
+    color: rgb(196, 186, 44) !important;
+    text-decoration-line: line-through;
+}
+.st, .ga, .co, .no{
+    color: map-get($map: $typeColor, $key: 'principal') !important;
+}
 .container {
     & h1 {
     margin-top: 7%;
+    margin-left: 0.6%;
     color: map-get($map: $typeColor, $key: 'secundario') !important;
     }
     & h2{
