@@ -1,4 +1,12 @@
 
+.st-s{
+    color: rgb(196, 186, 44) !important;
+    text-decoration-line: line-through;
+}
+.in-s, .ga-s, .co-s, .no-s{
+    color: map-get($map: $typeColor, $key: 'principal') !important;
+}
+
 .carousel-inner{
     height: 40em;
     & .carousel-item{
@@ -28,10 +36,13 @@
 
 div.row{
     margin-bottom: 5%;
+    & .card{
+        margin-bottom: 1em;
+    }
 }
 
 @mixin dimensiones($height, $width, $bgcolor) {
-    height: $height;
+    min-height: $height;
     width: $width;
     background-color: $bgcolor;
 }

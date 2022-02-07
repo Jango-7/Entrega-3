@@ -6,27 +6,153 @@
 @import "main-staff";
 @import "main-galeria";
 @import "main-contacto";
+@import "main-nosotros";
 @import "footer";
 
+// Media queries INDEX
 
-// body{
-    
-//     background-image: url(../img/bg4.jpeg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-attachment: fixed;
-// }
+@media only screen and (max-width:425px) {
+    div.title{
+        display:block;
+        flex-wrap: wrap;
+        & h1{
+            font-size: 2em;
+            margin: 2em auto;
+            text-align: center;
+        }
+        & h2{
+            font-size: 2.5em;
+            margin: 1em auto 2em;
+            text-align: center;
+        }
+    }
+    .btn{
+        margin-left: 36%;
+    }
+    .item3{
+        width: 50%;
+        margin: 30% auto;
+        display: flex;
+        justify-content: space-around;
+    }
+}
 
-// body:before{
-//     content: "";
-//     width: 100%;
-//     height: 100%;
-//     position: absolute;
-//     background: map-get($map: $typeColor, $key: 'gradiante');
-//     background-size: cover;
-//     opacity: 0.5;
-//     z-index: -1;
-// }
+// Media Queries STAFF 
+
+.coord {
+    & #coord{
+        font-size: 2.3rem;
+        background-color: #e9e9ebc4;
+    }
+}
+
+// Media Queries GALERIA 
+
+.galeria{
+    width: 90%;
+    margin: 50px auto 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px 200px 200px;
+    gap: 15px;
+    & .gal{
+        width: 100%;
+        min-height: 100%;
+    }
+    & .gal1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    & .gal2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    & .gal3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    & .gal4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    & .gal5{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    & .gal6{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    & .gal7{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    & .gal8{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+}
+
+.video{
+    & iframe{
+        margin-bottom: 50px;
+        border: 1px dotted white;
+        width: 80%;
+        height: 300px;
+    }
+}
+
+button.btn-outline-dark{
+    margin-left: 40%;
+    }
+
+// Media Queries NOSOTROS 
+
+article{
+    font-size: 14px;
+    width: 95%;
+    min-height: 70vh;
+    padding: 2em;
+    margin: 0 auto;
+    & img{
+        width: 100%;
+    }
+}
+.gab{
+    flex-direction: column;
+    padding: 2em;
+    & .dir {
+        font-size: 20px;
+        padding: 2px;
+        min-height: 100px;
+        text-align: center;
+    }
+    & p {
+        font-size: 14px;
+        padding: 2em;
+        text-align: center;
+    }
+    & img.gabi{
+        border: 2px solid black;
+        height: 50%;
+        width: 90%;
+        margin: 2% auto;
+    }
+}
+.map{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgba(0, 0, 0, 0);
+    & iframe {
+        width: 100%;
+        height: 300px;
+    }
+    & #map{
+        height: 10em;
+        width: 10em;
+        margin: 0 auto;
+    }
+}
 
 
 
@@ -48,26 +174,38 @@
     }
 }
 
-@media only screen and (max-width:425px){
-    .container h1{
-        font-size: 2rem;
-        margin-top: 10%;
-        margin-bottom: 10%;
+// Contacto 
+
+button.btn-outline-dark{
+    margin-left: 45%;
     }
+
+
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
     .container h2{
-        font-size: 3rem;
-        margin-top: 10%;
+        font-size: 7rem;
+        margin-top: 5%;
     }
     .item3{
-        width: 50%;
-        margin: 35% auto;
+        width: 25%;
+        margin-left: 70%;
+        margin-top: 20%;
+        & .icon{
+            font-size: 2.5rem;
+        }
     }
-    .icon{
-        font-size: 25px;
-    }
-
     div.container a{
-        margin: 10% auto ;
+        margin-top: 10%;
     }
+}
 
+// Media queries GALERIA 
+
+.video{
+    & iframe{
+        border: 2px dotted white;
+        width: 80%;
+        height: 50vh;
+    }
 }

@@ -10,12 +10,15 @@
 }
 #navbarNav .nav-link {
   font-size: 1.2rem;
-  color: #e9e9eb !important;
 }
 #navbarNav .nav-link:hover {
   color: rgba(136, 219, 40, 0.877) !important;
   border: 1px solid rgba(136, 219, 40, 0.877);
   border-radius: 50px;
+}
+
+.navbar-toggler-icon {
+  background-color: rgba(255, 255, 255, 0.637);
 }
 
 video {
@@ -30,8 +33,19 @@ video {
   opacity: 0.8;
 }
 
+.in {
+  color: #c4ba2c !important;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.st, .ga, .co, .no {
+  color: #e9e9eb !important;
+}
+
 .container h1 {
   margin-top: 7%;
+  margin-left: 0.6%;
   color: #e9e9eb !important;
 }
 .container h2 {
@@ -60,6 +74,16 @@ body.generic {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.st-s {
+  color: #c4ba2c !important;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.in-s, .ga-s, .co-s, .no-s {
+  color: #e9e9eb !important;
 }
 
 .carousel-inner {
@@ -92,13 +116,26 @@ body.generic {
 div.row {
   margin-bottom: 5%;
 }
+div.row .card {
+  margin-bottom: 1em;
+}
 
 .objetivo, .objetivo-alumno {
-  height: 200px;
+  min-height: 200px;
   width: 90%;
   background-color: #e9e9ebc4;
   margin: 0 auto 4%;
   padding: 30px 30px 30px 30px;
+}
+
+.ga-g {
+  color: #c4ba2c !important;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.st-g, .in-g, .co-g, .no-g {
+  color: #e9e9eb !important;
 }
 
 .galeria {
@@ -190,9 +227,19 @@ div.row {
 }
 .video iframe {
   margin-bottom: 80px;
-  border: 5px dotted white;
+  border: 3px dotted white;
   width: 80%;
   height: 75vh;
+}
+
+.co-c {
+  color: #c4ba2c !important;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.st-c, .ga-c, .in-c, .no-c {
+  color: #e9e9eb !important;
 }
 
 #contacto {
@@ -216,6 +263,72 @@ button.btn-outline-dark {
   background-color: rgba(136, 219, 40, 0.877);
 }
 
+.no-n {
+  color: #c4ba2c !important;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.st-n, .ga-n, .co-n, .in-n {
+  color: #e9e9eb !important;
+}
+
+article {
+  background-color: rgba(0, 0, 0, 0.788);
+  color: whitesmoke;
+  font-size: 18px;
+  width: 60%;
+  min-height: 70vh;
+  padding: 5em;
+  margin-top: 5em;
+  margin-left: 10em;
+}
+article img {
+  width: 1000px;
+  height: 50%;
+}
+
+.gab {
+  display: flex;
+  background-color: rgba(245, 245, 245, 0.788);
+  min-height: 700px;
+  width: 100%;
+  padding: 70px;
+  margin-bottom: 5em;
+}
+.gab .dir {
+  display: flex;
+  background: rgba(255, 255, 255, 0.767);
+  padding: 20px;
+  min-height: 450px;
+  line-height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.gab p {
+  font-family: monospace;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+}
+.gab img.gabi {
+  border: 2px solid black;
+  height: 400px;
+  width: 600px;
+  margin-top: 5%;
+}
+
+.map {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.733);
+}
+.map #map {
+  height: 20em;
+  width: 20em;
+  margin: 3em auto;
+}
+
 .item {
   display: flex;
   flex-direction: row;
@@ -233,6 +346,142 @@ button.btn-outline-dark {
 }
 .item .icon i:hover {
   color: #e9e9eb;
+}
+
+@media only screen and (max-width: 425px) {
+  div.title {
+    display: block;
+    flex-wrap: wrap;
+  }
+  div.title h1 {
+    font-size: 2em;
+    margin: 2em auto;
+    text-align: center;
+  }
+  div.title h2 {
+    font-size: 2.5em;
+    margin: 1em auto 2em;
+    text-align: center;
+  }
+
+  .btn {
+    margin-left: 36%;
+  }
+
+  .item3 {
+    width: 50%;
+    margin: 30% auto;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.coord #coord {
+  font-size: 2.3rem;
+  background-color: #e9e9ebc4;
+}
+
+.galeria {
+  width: 90%;
+  margin: 50px auto 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 200px 200px 200px 200px;
+  gap: 15px;
+}
+.galeria .gal {
+  width: 100%;
+  min-height: 100%;
+}
+.galeria .gal1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.galeria .gal2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.galeria .gal3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.galeria .gal4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.galeria .gal5 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.galeria .gal6 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.galeria .gal7 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.galeria .gal8 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.video iframe {
+  margin-bottom: 50px;
+  border: 1px dotted white;
+  width: 80%;
+  height: 300px;
+}
+
+button.btn-outline-dark {
+  margin-left: 40%;
+}
+
+article {
+  font-size: 14px;
+  width: 95%;
+  min-height: 70vh;
+  padding: 2em;
+  margin: 0 auto;
+}
+article img {
+  width: 100%;
+}
+
+.gab {
+  flex-direction: column;
+  padding: 2em;
+}
+.gab .dir {
+  font-size: 20px;
+  padding: 2px;
+  min-height: 100px;
+  text-align: center;
+}
+.gab p {
+  font-size: 14px;
+  padding: 2em;
+  text-align: center;
+}
+.gab img.gabi {
+  border: 2px solid black;
+  height: 50%;
+  width: 90%;
+  margin: 2% auto;
+}
+
+.map {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: rgba(0, 0, 0, 0);
+}
+.map iframe {
+  width: 100%;
+  height: 300px;
+}
+.map #map {
+  height: 10em;
+  width: 10em;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
@@ -255,28 +504,31 @@ button.btn-outline-dark {
     margin-top: 10%;
   }
 }
-@media only screen and (max-width: 425px) {
-  .container h1 {
-    font-size: 2rem;
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
+button.btn-outline-dark {
+  margin-left: 45%;
+}
 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .container h2 {
-    font-size: 3rem;
-    margin-top: 10%;
+    font-size: 7rem;
+    margin-top: 5%;
   }
 
   .item3 {
-    width: 50%;
-    margin: 35% auto;
+    width: 25%;
+    margin-left: 70%;
+    margin-top: 20%;
   }
-
-  .icon {
-    font-size: 25px;
+  .item3 .icon {
+    font-size: 2.5rem;
   }
 
   div.container a {
-    margin: 10% auto;
+    margin-top: 10%;
   }
+}
+.video iframe {
+  border: 2px dotted white;
+  width: 80%;
+  height: 50vh;
 }/*# sourceMappingURL=estilos.css.map */

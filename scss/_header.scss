@@ -9,7 +9,7 @@
     margin-right: 2em;
     & .nav-link{
         font-size: 1.2rem;
-        color: map-get($map: $typeColor, $key: 'principal') !important;
+        // color: map-get($map: $typeColor, $key: 'principal') !important;
     }
     & .nav-link:hover {
         color: map-get($map: $typeColor, $key:'success') !important;
@@ -17,5 +17,6 @@
         border-radius: 50px;
     }
 }
-
-
+.navbar-toggler-icon{
+    background-color: rgba(255, 255, 255, 0.637);
+}

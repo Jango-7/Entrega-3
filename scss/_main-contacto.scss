@@ -1,3 +1,11 @@
+.co-c{
+    color: rgb(196, 186, 44) !important;
+    text-decoration-line: line-through;
+}
+.st-c, .ga-c, .in-c, .no-c{
+    color: map-get($map: $typeColor, $key: 'principal') !important;
+}
+
 #contacto{
     text-align: center;
     font-family: monospace;
